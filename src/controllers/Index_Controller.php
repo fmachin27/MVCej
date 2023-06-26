@@ -1,11 +1,13 @@
 <?php
+namespace Franco\App\controllers;
+use Franco\App\libs\Controlador;
 
-class Index_Controller 
-{
+class Index_Controller extends Controlador {
+   
   public function index()
   {
   
-   echo "con index m index";
+$this->cargarVista("index/index","datoDemo");
 }
    }
 

@@ -1,22 +1,19 @@
 <?php
+
 namespace Franco\App\libs;
 
-
-
-class app
+class App
 {
 
-public static function iniciar()  
- {
+public static function iniciar()  {
 
-  $c           = $GET['c'] ?? "index";
-  $m           = $GET['m'] ?? "index";
+  $c           = $_GET['c'] ?? "index";
+  $m           = $_GET['m'] ?? "index";
   $con         = ucfirst($c) . "_Controller";
   $controllerPath = 'src/controllers/' . $con . ".php";
   require_once $controllerPath;
   $controller = new $con();
   $controller->{$m}();
-
  }
 
 }
