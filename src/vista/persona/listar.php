@@ -11,7 +11,7 @@
   <h1>Hail Hitler </h1>
   <?php
   require 'src/vista/menu.php'; ?>
-  <p><?php echo $this->datos; ?></p>
+  <p><?php var_dump($this->datos); ?></p>
 </body>
 
 </html>
